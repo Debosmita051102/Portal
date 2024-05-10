@@ -24,7 +24,7 @@ public class AdminService {
     ) {
         Optional<Admin> admin = adminRepository.findByUsername(loginmodel.getUsername());
         if(admin.isPresent()) {
-            if(loginmodel.getPassword().equals("megatronixparidhi2024msitmegaparidhi20031002202425")) {
+            if(loginmodel.getPassword().equals("G@ndu1_b@r@_123")) {
                 return CompletableFuture.completedFuture(loginmodel);
             } else {
                 throw new RuntimeException("Invalid Password");
